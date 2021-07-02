@@ -31,7 +31,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>    
     <style>
     
@@ -59,16 +62,21 @@
           <div class="row my-5 justify-content-center py-5">
             <div class="col-11">
               <div class="row ">
-                <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a" style="margin-bottom: 3px;">
                   <h3 class="text-muted mb-md-0 mb-5 bold-text">SREE RAM ENGINEERS.</h3>
+                  <div style="margin-bottom: 15px; ">
+                    <img style="margin-right: 10px;" src="{% static 'images\iso-26000-certification-service-500x500.png' %}" alt="logo-iso" height="40px" width="40px">
+                    <img src="{% static 'images\IAF_logo.jpg' %}" alt="logo-iaf" height="40px" width="40px">
+                  </div>
                 </div>
+                
                 <div class="col-xl-2 col-md-4 col-sm-4 col-12">
                   <h4 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h4>
                   <ul style="font-size: 1.5rem;" class="list-unstyled">
-                    <li>Home</li>
-                    <li>Facilities And Products</li>
-                    <li>Contact Us</li>
-                    <li>About Us</li>
+                    <a href="/" style="text-decoration: none;"><li>Home</li></a>
+                    <a href="/facilities_products" style="text-decoration: none;"><li>Facilities And Products</li></a>
+                    <a href="/contact_us" style="text-decoration: none;"><li>Contact Us</li></a>
+                    <a href="/about_us" style="text-decoration: none;"><li>About Us</li></a>
                   </ul>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-4 col-12">
@@ -87,13 +95,9 @@
                         aria-hidden="true"></i></span> </p>
                   <p class="rights"><span>&copy;</span>All Rights Reserved.</p>
                 </div>
-                <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
-                  <h4 class="mt-55 mt-2 text-muted bold-text"><b>ANIRUDH SINGLA</b></h4><small> <span><i
-                        class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@gmail.com</small>
-                </div>
-                <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
-                  <h4 class="text-muted bold-text"><b>RISHABH SHEKHAR</b></h4><small><span><i class="fa fa-envelope"
-                        aria-hidden="true"></i></span> rishab@gmail.com</small>
+                <div class="col-xl-3 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                  <h4 class="mt-55 mt-2 text-muted bold-text"><b>DINESH PANCHAL</b></h4><small> <span><i
+                        class="fa fa-envelope" aria-hidden="true"></i></span> dineshpanchal3539@gmail.com</small>
                 </div>
               </div>
             </div>
