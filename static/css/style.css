@@ -1180,3 +1180,9 @@ blockquote{
     text-align: center;
     color: red;
 }
+
+@media(max-width : 1000px){
+       .contact_container {
+            width: 1000px;
+        }
+}
