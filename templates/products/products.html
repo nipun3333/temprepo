@@ -3,6 +3,13 @@
 
 {% block body %}
 
+<div class="product-title">
+    <h1 style="font-size: 4rem; margin: 112px 0 0 0;">{{category}}</h1>    
+</div>
+
+
+
+
 <div class="tech-slideshow">
 
     <div class="slider-wrap">
@@ -19,8 +26,7 @@
 
 </div>
 
-<div class="condensers">
-    <h1 style="font-size: 4rem;">{{category}}</h1>
+<div class="condensers">    
     {% for item in data %}
     <div class="condenser-items">
         <div class="img">
