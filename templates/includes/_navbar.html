@@ -1,0 +1,23 @@
+{% load static %} 
+<nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars"> </i>
+  </label>
+  
+  <a href="/" class='anc'><label class="logo">
+    <img src="{% static 'images\logo.png' %}" alt="logo" style="width:45px;height:45px;">
+    <span class="full-text" style="font-family: 'Orbitron', sans-serif;">Shree Ram Engineers</span>
+    <span class="short-text" style="font-family: 'Orbitron', sans-serif;">SRE</span>
+  </label></a>
+
+  <ul>
+
+    <li><a href="/">Home</a></li>
+    <li><a href="/facilities_products">Facilities & Products</a></li>
+
+    <li><a href="/contact_us">Contact Us</a></li>
+    <li><a href="/about_us">About Us</a></li>
+
+  </ul>
+</nav>

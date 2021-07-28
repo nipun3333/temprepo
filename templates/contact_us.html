@@ -1,0 +1,118 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+
+
+<div class="contact_container">
+
+  <div class="contact-content">
+    <h1>CONTACT</h1>
+    <hr style="width: 90%; border: 1px solid black; margin: 0 auto 0 auto;">
+  </div>
+
+  <div class="cbox">
+    <h1>How Can We Help You ?</h1>
+    
+    <form action="{% url 'contact_us' %}" method="POST">
+      {% csrf_token %}
+      <div>
+        <h3 for="name">First Name</h3>
+        <input type="text" placeholder="First Name" name="myFName" maxlength="60">
+        
+      </div>
+
+      <div>
+        <h3 for="name">Last Name</h3>
+        <input type="text" placeholder="Last Name" name="myLName" maxlength="60" >
+        
+      </div>
+
+      <div>
+        <h3 for="name">Email</h3>
+        <input type="email" placeholder="Email-ID" name="myEmail">
+        
+      </div>
+
+      <div>
+        <h3 for="name">Contact Number</h3>
+        <input type="tel" placeholder="Contact-Number" name="contact_number" maxlength="10" >
+        
+      </div>
+
+      <div>
+        <h3 for="name">How can we help you ?</h3>
+        <textarea name="description" cols="30" rows="10"></textarea>
+      </div>
+      
+      <div class="button">
+        <!-- <div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button victoria-two">Login</a></div> -->
+        <!-- <button "btn btn-sm animated-button victoria-two" >Submit </button> -->
+        <button><p style="font-size: 2rem;">Submit</p></button>
+        <!-- <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+         -->
+      </div>   
+            
+    
+
+
+    </form>
+  </div>
+
+  <div class="cbox cbox1">
+    
+    <div class="smbox">
+      <a href="https://www.google.co.in/maps/dir//23.04128,72.68288/@23.0410898,72.6130224,12z">
+        <span class="material-icons">
+          location_on 
+        </span>
+      </a>
+      <p>Plot No. 280, Road No. 2, GIDC, Kathwada GIDC, <br>Ahmedabad-382430, Gujarat, India</p>
+    </div>
+
+
+    <div class="smbox">
+      <a href="#">
+        <span class="material-icons">
+          account_circle
+        </span>
+      </a>
+      <p>Dinesh Bhai Panchal</p>
+    </div>
+
+    <div class="smbox">
+      <a href="mailto: dineshpanchal3539@gmail.com">
+        <span class="material-icons">email</span>
+      </a>
+      <p>Email</p>
+    </div>
+  
+
+    <div class="smbox">
+      <a href="#"><i class="fab fa-facebook" style="font-size:24px"></i></a>
+      <br>
+      <p style="display: inline;">Facebook</p>
+    </div>
+
+    <div class="smbox">
+      <a href="https://www.linkedin.com/company/shree-ram-eng"><i class="fab fa-linkedin" style="font-size:24px"></i></a>
+      <br>
+      <p style="display: inline;">Linkedin</p>
+    </div>
+    
+    <div class="smbox">
+      <a href="#"><i class="fab fa-instagram" style="font-size:24px"></i></a>
+      <br>
+      <p style="display: inline;">Instagram</p>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
